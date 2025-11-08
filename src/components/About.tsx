@@ -8,9 +8,9 @@ export const About = () => {
   });
 
   const stats = [
-    { label: 'Years Experience', value: '5+' },
-    { label: 'Projects Completed', value: '50+' },
-    { label: 'Happy Clients', value: '30+' },
+    { label: 'Year Experience', value: '1+' },
+    { label: 'Projects Completed', value: '10+' },
+    { label: 'Happy Clients', value: '10+' },
   ];
 
   return (
@@ -37,13 +37,12 @@ export const About = () => {
           >
             <p className="text-2xl md:text-3xl lg:text-4xl body-text leading-relaxed mb-6">
               I'm a <strong className="font-semibold">full-stack developer</strong> and{' '}
-              <strong className="font-semibold">UI designer</strong> passionate about creating
-              seamless digital experiences that solve real problems.
+              <strong className="font-semibold"> passionate about building scalable</strong> , user-focused web and app solutions that solve real-world problems.
             </p>
             <p className="text-lg text-muted-foreground body-text leading-relaxed">
-              With expertise in modern web technologies, I specialize in building scalable
-              applications that balance aesthetics with functionality. My approach combines
-              clean code with thoughtful design to deliver products that users love.
+             With nearly one year of professional experience, I’ve worked across multiple projects in Java, Spring Boot, React, and AWS, combining front-end creativity with robust back-end logic. I enjoy crafting clean, maintainable code and designing intuitive digital experiences that users love.
+
+Throughout my journey, I’ve collaborated with startups and tech teams to deliver 10+ projects and support 10+ happy clients, focusing on performance, design precision, and innovation. My approach blends technology with thoughtful design — ensuring every product is efficient, engaging, and future-ready.
             </p>
           </motion.div>
 
