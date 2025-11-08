@@ -7,20 +7,18 @@ import { useInView } from 'react-intersection-observer';
 const skills = [
   'React',
   'TypeScript',
-  'Node.js',
-  'Next.js',
+  'Java ',
   'Python',
+  'supabase',
   'PostgreSQL',
-  'MongoDB',
-  'GraphQL',
   'AWS',
   'Docker',
   'Tailwind CSS',
   'Figma',
   'Git',
   'REST APIs',
-  'WebSocket',
-  'Redis',
+  
+  
 ];
 
 export const Skills = () => {
