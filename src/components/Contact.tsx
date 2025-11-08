@@ -151,11 +151,10 @@ export const Contact = () => {
         >
           <p className="text-sm text-muted-foreground mb-2">Or email me directly at</p>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:yanikamanikanta24@gmail.com"
             className="text-lg font-medium underline-animation"
           >
-            {/* TODO: Replace with your actual email */}
-            your.email@example.com
+            yanikamanikanta24@gmail.com
           </a>
         </motion.div>
       </div>

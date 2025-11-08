@@ -49,9 +49,8 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
         >
           <Avatar className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] lg:w-[180px] lg:h-[180px] border-2 border-foreground/20 shadow-lg">
-            {/* TODO: Replace with your actual profile photo path */}
-            <AvatarImage src="/src/assets/hero-profile.jpg" alt="Profile Photo" />
-            <AvatarFallback className="text-2xl md:text-3xl lg:text-4xl font-display">YN</AvatarFallback>
+            <AvatarImage src="/hero-profile.jpg" alt="Manikanta Yanika Profile Photo" />
+            <AvatarFallback className="text-2xl md:text-3xl lg:text-4xl font-display">MY</AvatarFallback>
           </Avatar>
         </motion.div>
 
@@ -71,10 +70,9 @@ export const Hero = () => {
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          {/* TODO: Replace with your name/title */}
-          CREATIVE
+          MANIKANTA YANIKA
           <br />
-          DEVELOPER
+          Full-Stack Web & App Developer
         </motion.h1>
 
         <motion.p
@@ -83,8 +81,7 @@ export const Hero = () => {
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          {/* TODO: Replace with your tagline */}
-          Building digital experiences that merge design with functionality
+          Building scalable digital products using Java, Python, and React — delivering modern, high-performance solutions for startups and businesses.
         </motion.p>
 
         <motion.button

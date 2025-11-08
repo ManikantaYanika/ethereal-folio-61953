@@ -17,30 +17,27 @@ export const Footer = () => {
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:yanikamanikanta24@gmail.com"
               className="text-lg md:text-2xl text-muted-foreground hover:text-foreground transition-colors underline-animation"
             >
-              {/* TODO: Replace with your email */}
               Email
             </a>
             <span className="text-muted-foreground">•</span>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/manikanta-yanika"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg md:text-2xl text-muted-foreground hover:text-foreground transition-colors underline-animation"
             >
-              {/* TODO: Replace with your LinkedIn URL */}
               LinkedIn
             </a>
             <span className="text-muted-foreground">•</span>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/ManikantaYanika"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg md:text-2xl text-muted-foreground hover:text-foreground transition-colors underline-animation"
             >
-              {/* TODO: Replace with your GitHub URL */}
               GitHub
             </a>
             <span className="text-muted-foreground">•</span>
@@ -58,8 +55,7 @@ export const Footer = () => {
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground">
-            {/* TODO: Replace with your name */}
-            © {currentYear} Portfolio. All rights reserved.
+            © {currentYear} Manikanta Yanika. All rights reserved.
           </p>
           
           <button

@@ -55,10 +55,9 @@ const handler = async (req: Request): Promise<Response> => {
     console.log("Confirmation email sent:", confirmationResponse);
 
     // Send notification email to you
-    // TODO: Replace with your actual email address
     const notificationResponse = await resend.emails.send({
       from: "Portfolio <onboarding@resend.dev>", // Change to your verified domain
-      to: ["your.email@example.com"], // TODO: Replace with your email
+      to: ["yanikamanikanta24@gmail.com"],
       subject: `New Contact Form Message from ${name}`,
       html: `
         <h1>New Contact Form Submission</h1>
