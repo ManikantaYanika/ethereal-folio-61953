@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,30 +17,40 @@ export const Footer = () => {
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <a
-              href="https://linkedin.com"
+              href="mailto:your.email@example.com"
+              className="text-lg md:text-2xl text-muted-foreground hover:text-foreground transition-colors underline-animation"
+            >
+              {/* TODO: Replace with your email */}
+              Email
+            </a>
+            <span className="text-muted-foreground">•</span>
+            <a
+              href="https://linkedin.com/in/yourprofile"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg md:text-2xl text-muted-foreground hover:text-foreground transition-colors underline-animation"
             >
+              {/* TODO: Replace with your LinkedIn URL */}
               LinkedIn
             </a>
             <span className="text-muted-foreground">•</span>
             <a
-              href="https://github.com"
+              href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg md:text-2xl text-muted-foreground hover:text-foreground transition-colors underline-animation"
             >
+              {/* TODO: Replace with your GitHub URL */}
               GitHub
             </a>
             <span className="text-muted-foreground">•</span>
             <a
-              href="https://twitter.com"
+              href="https://instagram.com/mani_2k4_"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg md:text-2xl text-muted-foreground hover:text-foreground transition-colors underline-animation"
             >
-              Twitter
+              Instagram
             </a>
           </div>
         </div>
@@ -48,6 +58,7 @@ export const Footer = () => {
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground">
+            {/* TODO: Replace with your name */}
             © {currentYear} Portfolio. All rights reserved.
           </p>
           

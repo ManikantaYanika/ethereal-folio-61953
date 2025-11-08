@@ -5,7 +5,8 @@ import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Loader2 } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
 
 export const Contact = () => {
   const [ref, inView] = useInView({
@@ -19,14 +20,34 @@ export const Contact = () => {
     email: '',
     message: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: 'Message sent!',
-      description: "I'll get back to you as soon as possible.",
-    });
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: 'Message sent!',
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error: any) {
+      console.error('Error sending message:', error);
+      toast({
+        title: 'Failed to send message',
+        description: error.message || 'Please try again later or email me directly.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -106,9 +127,19 @@ export const Contact = () => {
             type="submit"
             className="w-full py-6 text-base font-medium group"
             size="lg"
+            disabled={isSubmitting}
           >
-            Send Message
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Sending...
+              </>
+            ) : (
+              <>
+                Send Message
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+              </>
+            )}
           </Button>
         </motion.form>
 
@@ -123,6 +154,7 @@ export const Contact = () => {
             href="mailto:your.email@example.com"
             className="text-lg font-medium underline-animation"
           >
+            {/* TODO: Replace with your actual email */}
             your.email@example.com
           </a>
         </motion.div>

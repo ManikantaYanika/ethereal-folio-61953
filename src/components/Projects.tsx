@@ -3,6 +3,16 @@ import { useInView } from 'react-intersection-observer';
 import { Github, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useRef } from 'react';
 
+// TODO: Replace with your actual projects
+// For each project, provide:
+// - title: Your project name
+// - year: Year completed
+// - description: What the project does (2-3 sentences)
+// - tags: Technologies used (array)
+// - image: Screenshot path (upload to src/assets/projects/)
+// - github: Your GitHub repository URL
+// - live: Live demo URL (optional)
+
 const projects = [
   {
     id: 1,
@@ -11,8 +21,8 @@ const projects = [
     description: 'Full-stack e-commerce solution with payment integration and real-time inventory management.',
     tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
     image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    github: 'https://github.com', // TODO: Replace with your GitHub URL
+    live: 'https://example.com', // TODO: Replace with your demo URL
   },
   {
     id: 2,
@@ -21,8 +31,8 @@ const projects = [
     description: 'Headless CMS for portfolio websites with drag-and-drop builder and live preview.',
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    github: 'https://github.com', // TODO: Replace with your GitHub URL
+    live: 'https://example.com', // TODO: Replace with your demo URL
   },
   {
     id: 3,
@@ -31,39 +41,10 @@ const projects = [
     description: 'Real-time analytics dashboard with customizable widgets and data visualization.',
     tags: ['React', 'D3.js', 'Firebase', 'Material-UI'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    github: 'https://github.com', // TODO: Replace with your GitHub URL
+    live: 'https://example.com', // TODO: Replace with your demo URL
   },
-  {
-    id: 4,
-    title: 'Social Media App',
-    year: '2023',
-    description: 'Social networking platform with real-time messaging and content sharing.',
-    tags: ['React Native', 'GraphQL', 'MongoDB', 'AWS'],
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop',
-    github: 'https://github.com',
-    live: 'https://example.com',
-  },
-  {
-    id: 5,
-    title: 'Task Management Tool',
-    year: '2023',
-    description: 'Collaborative task management with kanban boards and team analytics.',
-    tags: ['Vue.js', 'Express', 'MySQL', 'Socket.io'],
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop',
-    github: 'https://github.com',
-    live: 'https://example.com',
-  },
-  {
-    id: 6,
-    title: 'AI Content Generator',
-    year: '2024',
-    description: 'AI-powered content generation tool for marketing and social media.',
-    tags: ['Python', 'OpenAI', 'FastAPI', 'React'],
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop',
-    github: 'https://github.com',
-    live: 'https://example.com',
-  },
+  // Add more projects as needed
 ];
 
 export const Projects = () => {

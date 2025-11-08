@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,6 +41,20 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center px-6 grain-texture overflow-hidden">
       {/* Content */}
       <div className="container mx-auto text-center">
+        {/* Profile Photo */}
+        <motion.div
+          className="flex justify-center mb-8"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.8 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+        >
+          <Avatar className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] lg:w-[180px] lg:h-[180px] border-2 border-foreground/20 shadow-lg">
+            {/* TODO: Replace with your actual profile photo path */}
+            <AvatarImage src="/src/assets/hero-profile.jpg" alt="Profile Photo" />
+            <AvatarFallback className="text-2xl md:text-3xl lg:text-4xl font-display">YN</AvatarFallback>
+          </Avatar>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
@@ -56,6 +71,7 @@ export const Hero = () => {
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
+          {/* TODO: Replace with your name/title */}
           CREATIVE
           <br />
           DEVELOPER
@@ -67,6 +83,7 @@ export const Hero = () => {
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
+          {/* TODO: Replace with your tagline */}
           Building digital experiences that merge design with functionality
         </motion.p>
 

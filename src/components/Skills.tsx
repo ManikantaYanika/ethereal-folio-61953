@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+// TODO: Replace with your actual skills
+// Recommended: 12-20 skills for optimal visual balance
+// Categories: Frontend, Backend, Tools, Databases, etc.
 const skills = [
   'React',
   'TypeScript',
