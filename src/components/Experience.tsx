@@ -3,39 +3,56 @@ import { useInView } from 'react-intersection-observer';
 
 const experiences = [
   {
-    title: 'Senior Full Stack Developer',
-    company: 'Tech Innovations Inc.',
-    period: '2022 - Present',
+    title: 'Product Developer',
+    company: 'REVIFY PRIVATE LIMITED · Self-employed.',
+    period: 'Jan 2025 - Present | Bengaluru, Karnataka, India (Remote)',
     description:
-      'Leading development of scalable web applications and mentoring junior developers.',
+      'Part of the founding team developing innovative digital products for clients and internal ventures..',
     achievements: [
-      'Architected and launched 3 major products serving 100K+ users',
-      'Improved application performance by 60% through optimization',
-      'Led team of 5 developers in agile environment',
+      'Designed and built scalable front-end components using React and TypeScript',
+      'Collaborated with 7+ core team members to develop full-cycle product prototypes',
+      'Integrated REST APIs and optimized application performance for responsiveness',
+      'Contributed to strategic planning and UI/UX improvements to enhance product usability'
     ],
   },
   {
-    title: 'Full Stack Developer',
-    company: 'Digital Solutions Ltd.',
-    period: '2020 - 2022',
+    title: 'AWS Intern',
+    company: 'Codeworks EduTech Services Pvt Ltd · Internship.',
+    period: 'Jan 2024 – Apr 2024 | Hyderabad, Telangana, India (Hybrid)',
     description:
-      'Developed and maintained client projects using modern JavaScript frameworks.',
+      'Gained hands-on experience in AWS cloud technologies while supporting client infrastructure projects..',
     achievements: [
-      'Built 15+ client websites and web applications',
-      'Implemented CI/CD pipelines reducing deployment time by 40%',
-      'Collaborated with design team on UI/UX improvements',
+      'Worked with AWS services such as EC2, S3, and Lambda for deployment and automation',
+      'Developed Python-based automation scripts for cloud resource management',
+      'Configured CI/CD pipelines to streamline deployments and reduce downtime',
+      'Documented and presented cloud architecture solutions to senior engineers'
     ],
   },
   {
-    title: 'Frontend Developer',
-    company: 'Creative Agency',
-    period: '2019 - 2020',
+    title: 'Java Full Stack Intern',
+    company: 'JSpiders Training and Development Center · Internship',
+    period: 'June 2024 – Dec 2024 | Bengaluru, Karnatka, India (On-site)',
     description:
-      'Created responsive and interactive user interfaces for various clients.',
+      'Completed comprehensive Java Full Stack Development training and hands-on projects..',
     achievements: [
-      'Developed pixel-perfect implementations from designs',
-      'Improved site speed by 50% through optimization techniques',
-      'Implemented accessibility standards across all projects',
+      'Gained expertise in Core Java, JDBC, Servlets, JSP, and Hibernate',
+      'Built end-to-end full stack web applications using Java, MySQL, and React.js',
+      'Worked on CRUD-based project modules focusing on backend integration',
+      'trengthened debugging, database handling, and deployment skills',
+
+    ],
+  },
+  {
+    title: 'Front-End Developer Intern',
+    company: 'AK Technologies Pvt Ltd · Internship.',
+    period: 'Sep 2023 – Dec 2023 | Hyderabad, Telangana, India',
+    description:
+      'Focused on building interactive and optimized web interfaces for client-based applications.',
+    achievements: [
+      'Developed responsive UI components using HTML, CSS, JavaScript, and React.js',
+      'Enhanced site speed and performance through efficient component design',
+      'Integrated APIs and ensured seamless communication between front-end and back-end',
+      'Worked closely with designers and developers in an Agile environment',
     ],
   },
 ];
