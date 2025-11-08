@@ -16,35 +16,46 @@ import { useState, useRef } from 'react';
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    year: '2024',
-    description: 'Full-stack e-commerce solution with payment integration and real-time inventory management.',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop',
-    github: 'https://github.com', // TODO: Replace with your GitHub URL
-    live: 'https://example.com', // TODO: Replace with your demo URL
+    title: 'Ecommerce Development & Web Solutions',
+    year: '2025',
+    description: 'Specializing in building efficient and scalable eCommerce platforms. Focused on delivering seamless online shopping experiences with modern, user-friendly designs..',
+    tags: ['React', 'Node.js', 'Supabase', 'Tailwand CSS', 'PostgreSQL', 'Stripe'],
+    image: 'https://media.istockphoto.com/id/2219589773/photo/a-tanker-truck-drives-along-a-highway-outside-the-city.jpg?s=2048x2048&w=is&k=20&c=TNiJLRKl_7GTzzffUkJGzoYilEpONl4hMCcCEA0Yuy0=',
+    github: 'https://github.com/ManikantaYanika/aqua-tank-connect', // TODO: Replace with your GitHub URL
+    live: 'https://aqua-tank-connect.lovable.app/', // TODO: Replace with your demo URL
   },
   {
     id: 2,
-    title: 'Portfolio CMS',
-    year: '2024',
-    description: 'Headless CMS for portfolio websites with drag-and-drop builder and live preview.',
+    title: 'SmartCommerce — Modern Web Store Solution',
+    year: '2025',
+    description: 'A cloud-based e-commerce solution enabling businesses to launch and scale online stores effortlessly with real-time analytics, modern UI, and integrated payment systems.',
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase'],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    github: 'https://github.com', // TODO: Replace with your GitHub URL
-    live: 'https://example.com', // TODO: Replace with your demo URL
+    image: 'https://images.unsplash.com/photo-1644416250692-2596ef185bc5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332',
+    github: 'https://github.com/KailashNathh/Teaday-Websitr', // TODO: Replace with your GitHub URL
+    live: 'https://glistening-tanuki-03ed3d.netlify.app', // TODO: Replace with your demo URL
   },
   {
     id: 3,
-    title: 'Analytics Dashboard',
-    year: '2023',
-    description: 'Real-time analytics dashboard with customizable widgets and data visualization.',
-    tags: ['React', 'D3.js', 'Firebase', 'Material-UI'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-    github: 'https://github.com', // TODO: Replace with your GitHub URL
-    live: 'https://example.com', // TODO: Replace with your demo URL
+    title: '“Learn • Tune • Deploy — Adaptive Online Learning Platform”',
+    year: '2025',
+    description: '"Designed to empower learners of all levels, Learn • Tune • Deploy is a web-based learning platform that offers personalised learning paths, interactive lessons, real-time progress tracking, and secure payment integration. Built with modern full-stack technologies to scale effortlessly and deliver a smooth UI/UX for both students and instructors.".',
+    tags: ['React', 'Node.js', 'supabase', 'PostgresSQl' ,'Tailwand CSs' , 'Stripe (for payments)' , 'Vercel/Netlify (for deployment)'],
+    image: 'https://images.unsplash.com/photo-1758876016923-c4e2f72983bd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI3fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=500',
+    github: 'https://github.com/ManikantaYanika/learn-tune-deploy', // TODO: Replace with your GitHub URL
+    live: 'https://learn-tune-deploy.lovable.app', // TODO: Replace with your demo URL
   },
   // Add more projects as needed
+  {
+    id: 4,
+    title: 'Mobile Adventure Game UI (On-the-Go)',
+    year: '2024',
+    description :'Dive into a neon-soaked cityscape where you become the BeastRunner. Equipped with glowing gadgets, you streak through towering skyscrapers, dodge laser fences and outsmart security drones. Your mission? Recover the stolen energy cores and ignite the city’s pulse again. With slick animations, reactive HUD, and immersive sound design, every run feels electric',
+
+    tags: ['React', 'Node.js', 'supabase', 'PostgresSQl' ,'Tailwand CSs' , 'Stripe (for payments)' ,'Maps',  'Vercel/lovable (for deployment)'],
+    image : 'https://media.istockphoto.com/id/1142340485/photo/automatic-electric-car-traffic-jam-in-china.jpg?s=1024x1024&w=is&k=20&c=HlcYtydj29_QgrdICywn8TxXgRo3n1anvykGkFeMulY=',
+    //github: 'https://github.com/ManikantaYanika/learn-tune-deploy', // TODO: Replace with your GitHub URL
+    live: 'https://beastdrive-glow-ui-kit.lovable.app', // TODO: Replace with your demo URL
+  },
 ];
 
 export const Projects = () => {
