@@ -3,20 +3,16 @@ import { useInView } from 'react-intersection-observer';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'CEO, StartupCo',
-    content: 'Outstanding work! The website exceeded our expectations. Professional, responsive, and delivered on time.',
-  },
-  {
-    name: 'Michael Chen',
-    role: 'Product Manager, TechFlow',
-    content: 'Incredible attention to detail and excellent communication throughout the project. Highly recommend!',
-  },
-  {
-    name: 'Emily Rodriguez',
-    role: 'Founder, DesignHub',
-    content: 'Best developer I\'ve worked with. Clean code, beautiful design, and great problem-solving skills.',
-  },
+  name: 'Rahul Mehta',
+  role: 'Product Manager',
+  content: 'Exceptional experience! The project was delivered with precision, creativity, and clear communication throughout.',
+},
+{
+  name: 'Kailash K',
+  role: 'Revify , Manager',
+  content: 'Very professional and reliable. The final product perfectly matched our vision — highly recommend working with them!',
+},
+
 ];
 
 export const Testimonials = () => {
