@@ -60,13 +60,7 @@ export const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-base font-display font-bold tracking-tight hover:opacity-70 transition-opacity"
-          >
-            Portfolio
-          </button>
-
+          <div className="hidden md:block w-12" />
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-10">
             {navItems.map((item) => (
