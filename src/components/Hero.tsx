@@ -4,7 +4,7 @@ import { ArrowDown } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const NAME_LINE_1 = 'MANIKANTA YANIKA';
-const NAME_LINE_2 = 'Full-Stack Web & App Developer';
+const NAME_LINE_2 = 'AI Product Builder & LLM Systems Developer';
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -123,9 +123,8 @@ export const Hero = () => {
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
           transition={{ duration: 0.7, delay: 1.4, ease: [0.16, 1, 0.3, 1] }}
         >
-          Building scalable digital products using Java, Python, and React —
-          delivering modern, high-performance solutions for startups and
-          businesses.
+          Building and scaling AI-powered products using LLMs, RAG, and AI agents — integrating modern AI tools, workflow automation (n8n), and vibe coding to rapidly ship real-world solutions.
+
         </motion.p>
 
         <motion.button
