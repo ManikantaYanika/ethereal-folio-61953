@@ -9,14 +9,16 @@ import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { PageTransition } from '@/components/PageTransition';
 import { ScrollProgress } from '@/components/ScrollProgress';
+import { AmbientBackground } from '@/components/AmbientBackground';
 
 const Index = () => {
   return (
     <PageTransition>
-      <div className="relative min-h-screen bg-background">
+      <div className="relative min-h-screen">
+        <AmbientBackground />
         <ScrollProgress />
         <Navigation />
-        
+
         <main>
           <Hero />
           <About />
@@ -26,7 +28,7 @@ const Index = () => {
           <Testimonials />
           <Contact />
         </main>
-        
+
         <Footer />
       </div>
     </PageTransition>
