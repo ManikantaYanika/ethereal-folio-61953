@@ -14,6 +14,20 @@ const skills = [
   'Figma',
   'Git',
   'REST APIs',
+  'OpenAI APT',
+  'LLMs',
+  'RAG',
+  'AI Agents',
+  'Lang Chain',
+  'n8n',
+  'Lamg Graph',
+  'Prompt Engineering',
+  'Gradito',
+  'Streamlit',
+  'Ai assited Development',
+  'Product Bulding',
+  
+
 ];
 
 export const Skills = () => {
