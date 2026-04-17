@@ -2,10 +2,47 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Github, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useRef } from 'react';
+import { Description } from '@radix-ui/react-toast';
 
 const projects = [
+
   {
-    id: 1,
+    id: 0,
+    title: 'brsrnext — AI Product Platform',
+    year: '2026',
+    description:
+      'An AI-powered platform designed to build and automate real-world workflows using LLMs, RAG, and agent-based systemss, Built end-to-end using React, Supabase, and LLM systems,Implemented RAG pipelines, LangChain, LangGraph, and autonomous agents,Enables intelligent automation and scalable product workflows,Designed for rapid product development from idea to deployment,',
+    tags: ['React','python','supabase','Agents','LLm','RAG','vibe coding'],
+    image:'https://media.istockphoto.com/id/1410400348/photo/the-hand-holds-a-neon-icon-on-the-theme-of-eco-eco-friendly-concept-3d-render.jpg?s=2048x2048&w=is&k=20&c=sxZiLsSZ7bXZXU93xEWcYI4hzZFCvhJW5CvvGU9IpHo=',
+    live : 'brsrnext.com',
+
+  },
+  {
+    id :1,
+    title : '⚡ Consysto — AI Workflow & Habit System',
+    year: '2026',
+    description:
+      'A productivity-focused AI platform for habit tracking, daily check-ins, and workflow automation.',
+    tags : ['Supabase','LLMS','react','python','vibe coding'],
+    image:
+      'https://plus.unsplash.com/premium_photo-1684356819140-e82e7446b600?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fCVFMiU5QSVBMSUyMENvbnN5c3RvJTIwJUUyJTgwJTk0JTIwQUklMjBXb3JrZmxvdyUyMCUyNiUyMEhhYml0JTIwU3lzdGVtJTIwYmFzZWQlMjBvbiUyMHRoaXMlMjBhcHAlMjBkZXNpZ24lMjBhJTIwb25lJTIwb3V0bGV0fGVufDB8fDB8fHww',
+    live : 'consysto.netlify.app',
+
+  },
+  {
+    id:2,
+    title : '🤖 ManiAssist — AI Assistant Platform',
+    year: '2026',
+    description:
+      'An AI-powered assistant for real-time interaction, task automation, and intelligent query handling.',
+    tags: ['React', 'AI', 'automation', 'assistant', 'Supabase', 'UX'],
+    image :
+      'https://plus.unsplash.com/premium_photo-1725907643560-8d2dc0124337?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QW4lMjBBSS1wb3dlcmVkJTIwYXNzaXN0YW50JTIwZm9yJTIwcmVhbC10aW1lJTIwaW50ZXJhY3Rpb24lMkMlMjB0YXNrJTIwYXV0b21hdGlvbiUyQyUyMGFuZCUyMGludGVsbGlnZW50JTIwcXVlcnklMjBoYW5kbGluZy4lMjBvbiUyMHRoaXMlMjBhcHAlMjBkZXNpZ24lMjBhJTIwb25lJTIwb3V0bGV0fGVufDB8fDB8fHww',
+    live: 'maniassist.netlify.app',
+
+  },
+  {
+    id: 3,
     title: 'Ecommerce Development & Web Solutions',
     year: '2025',
     description:
@@ -17,7 +54,7 @@ const projects = [
     live: 'https://aqua-tank-connect.lovable.app/',
   },
   {
-    id: 2,
+    id: 4,
     title: 'SmartCommerce — Modern Web Store Solution',
     year: '2025',
     description:
@@ -29,7 +66,7 @@ const projects = [
     live: 'https://glistening-tanuki-03ed3d.netlify.app',
   },
   {
-    id: 3,
+    id: 5,
     title: '“Learn • Tune • Deploy — Adaptive Online Learning Platform”',
     year: '2025',
     description:
@@ -49,7 +86,7 @@ const projects = [
     live: 'https://learn-tune-deploy.lovable.app',
   },
   {
-    id: 4,
+    id: 6,
     title: 'Mobile Adventure Game UI (On-the-Go)',
     year: '2024',
     description:
@@ -146,7 +183,7 @@ export const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-\[1200ms\] ease-\[cubic-bezier(0.16,1,0.3,1)\] group-hover:scale-110"
                   />
 
                   {/* Glassmorphic overlay */}
