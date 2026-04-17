@@ -42,7 +42,7 @@ export const Footer = () => {
             </a>
             <span className="text-muted-foreground">•</span>
             <a
-              href="https://instagram.com/mani_2k4_"
+              href="https://instagram.com/work_with_mani_"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg md:text-2xl text-muted-foreground hover:text-foreground transition-colors underline-animation"
