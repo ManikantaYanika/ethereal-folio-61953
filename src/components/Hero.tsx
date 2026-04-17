@@ -100,15 +100,6 @@ export const Hero = () => {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 12 }}
-          transition={{ duration: 0.6, delay: 0.25 }}
-          className="flex justify-center mb-8"
-        >
-          <span className="eyebrow">Portfolio 2025</span>
-        </motion.div>
-
         <h1 className="font-display fluid-display font-bold mb-8">
           {renderLine(NAME_LINE_1, 0.4)}
           <br />
