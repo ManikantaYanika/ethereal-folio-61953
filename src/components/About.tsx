@@ -61,16 +61,14 @@ export const About = () => {
               className="absolute left-0 top-2 bottom-2 w-px accent-line"
             />
             <p className="text-2xl md:text-3xl lg:text-[2.5rem] body-text leading-tight tracking-tight mb-8">
-              I'm a <strong className="font-semibold">full-stack developer</strong> and{' '}
-              <strong className="font-semibold">passionate about building scalable</strong>,
-              user-focused web and app solutions that solve real-world problems.
+              I'm an<strong className="font-semibold">Ai Product Builder</strong> focused{' '}
+              <strong className="font-semibold">on creating real-world applications</strong>,
+              using LLMs, RAG, and agent-based systems.
             </p>
             <p className="text-base md:text-lg text-muted-foreground body-text">
-              With nearly one year of professional experience, I've worked across
-              multiple projects in Java, Spring Boot, React, and AWS, combining
-              front-end creativity with robust back-end logic. I enjoy crafting
-              clean, maintainable code and designing intuitive digital
-              experiences that users love.
+              I build end-to-end products — from idea and architecture to deployment — combining modern AI tools, automation workflows (n8n), and scalable full-stack systems.
+              My work focuses on solving practical problems through intelligent systems, rapid prototyping, and clean, production-ready solutions.
+              
               <br />
               <br />
               Throughout my journey, I've collaborated with startups and tech
