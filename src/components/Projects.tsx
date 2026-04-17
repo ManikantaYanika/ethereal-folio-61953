@@ -67,7 +67,7 @@ const projects = [
   },
   {
     id: 5,
-    title: '“Learn • Tune • Deploy — Adaptive Online Learning Platform”',
+    title: '“Teaday”',
     year: '2025',
     description:
       '"Designed to empower learners of all levels, Learn • Tune • Deploy is a web-based learning platform that offers personalised learning paths, interactive lessons, real-time progress tracking, and secure payment integration. Built with modern full-stack technologies to scale effortlessly and deliver a smooth UI/UX for both students and instructors.".',
